@@ -2,10 +2,10 @@
 dynamic=["version"]
 
 [tool.poetry]
-name = "cimaging-python-template"
-description = ""
-version = "0.0.0"
-authors = ["Your Name <you@example.com>"]
+name = "add-one"
+description = "Add one to any number"
+version = "1.0.0"
+authors = ["Thibaut Vercueil <tvercueil@prophesee.ai>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
