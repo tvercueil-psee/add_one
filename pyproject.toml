@@ -1,0 +1,46 @@
+[project]
+dynamic=["version"]
+
+[tool.poetry]
+name = "cimaging-python-template"
+description = ""
+version = "0.0.0"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.0.0"
+mypy = "^1.5.1"
+pylint = "^3.0.0"
+pytest = "^7.4.2"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+setuptools_scm = "^8.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests/unit/",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["cimaging_python_template"]
+
+[tool.coverage.xml]
+output = "coverage.xml"
+
+[[tool.poetry.source]]
+name = "prophesee"
+url = "https://artifactory.devops.devops-psee.net/artifactory/api/pypi/prophesee-cimaging-pypi/simple"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
